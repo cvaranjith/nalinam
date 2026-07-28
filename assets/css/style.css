@@ -1712,6 +1712,7 @@
       border-top: 1px solid var(--border-light);
       flex-wrap: wrap;
       gap: 16px;
+      background: var(--white);
     }
     .footer-copy strong {
       font-family: var(--font-cinzel);
@@ -1728,6 +1729,54 @@
       height: 160px;
       width: auto;
       /* filter: brightness(0); */
+    }
+    .footer-social {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      min-width: 180px;
+    }
+    .footer-social-title {
+      font-size: 0.72rem;
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 600;
+    }
+    .social-links {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .social-links a {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 12px;
+      border: 1px solid rgba(200, 155, 60, 0.18);
+      border-radius: 999px;
+      background: linear-gradient(135deg, rgba(247, 233, 210, 0.45), rgba(255, 255, 255, 0.95));
+      color: var(--text-secondary);
+      font-size: 0.72rem;
+      letter-spacing: 0.8px;
+      transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease, color 0.25s ease;
+    }
+    .social-links a:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 22px rgba(200, 155, 60, 0.16);
+      border-color: rgba(200, 155, 60, 0.4);
+      color: var(--gold-dark);
+    }
+    .social-icon {
+      display: grid;
+      place-items: center;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: var(--gold);
+      color: var(--white);
+      font-size: 0.75rem;
+      font-weight: 700;
     }
     .footer-links {
       display: flex;
@@ -1748,6 +1797,17 @@
         flex-direction: column;
         text-align: center;
         gap: 12px;
+      }
+      .footer-social {
+        align-items: center;
+      }
+      .social-links {
+        align-items: center;
+      }
+      .social-links a {
+        justify-content: center;
+        width: 100%;
+        max-width: 220px;
       }
       .footer-links {
         gap: 16px;
