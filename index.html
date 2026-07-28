@@ -1,279 +1,743 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nalinam Nrithyalaya · Color Harmony</title>
-  <link rel="icon" type="image" sizes="any" href="assets/fevicon.png">
+  <title>Nalinam Nrithyalaya · Light Theme</title>
+  <link rel="icon" type="image" sizes="any" href="assets/fevicon.png" />
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="assets/css/style.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:wght@400;500;600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
     
+  </style>
 </head>
 <body>
-<div class="page-shell">
-  <!-- PRELOADER -->
-  <div class="preloader" aria-hidden="true">
-    <div class="preloader-core">
-      <div class="lotus-bloom"></div>
-      <div class="preloader-logo">
-        <img src="assets/logo.png" alt="Nalinam Nrithyalaya logo" />
+
+  <div class="page-shell">
+
+    <!-- ─── PRELOADER ─── -->
+    <div class="preloader" aria-hidden="true">
+      <div class="preloader-core">
+        <!-- <div class="lotus-bloom"></div> -->
+        <div class="preloader-logo">
+          <img src="assets/logo.png" alt="Nalinam Nrithyalaya logo" />
+        </div>
       </div>
     </div>
+
+    <!-- ─── TOPBAR ─── -->
+    <header class="topbar reveal is-visible">
+      <a class="brand" href="#home">
+        <span class="brand-mark">
+          <img src="assets/logo.png" alt="Nalinam Nrithyalaya logo" />
+        </span>
+        <span>Nalinam Nrithyalaya</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#courses">Classes</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="nav-cta" href="#contact">Book Trial</a>
+    </header>
+
+    <main id="home">
+
+      <!-- ─── HERO ─── -->
+      <section class="hero">
+        <div class="hero-content reveal is-visible">
+          <p class="eyebrow">Admissions Open • Kilpauk, Chennai</p>
+          <h1>Every Step Tells <br /> <span class="gold">a Story</span></h1>
+          <p class="hero-text">A sacred home for dancers who seek elegance, discipline, and a deeply rooted cultural journey.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Book Free Trial</a>
+            <a class="btn btn-secondary" href="#courses">Explore Classes</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-pill"><strong>12+</strong><span>Years legacy</span></div>
+            <div class="stat-pill"><strong>200+</strong><span>Students</span></div>
+            <div class="stat-pill"><strong>8</strong><span>Guru-sishya</span></div>
+          </div>
+        </div>
+
+        <!-- Hero Visual -->
+        <div class="hero-visual reveal is-visible">
+          <div class="banner-bg"></div>
+          <div class="banner-image">
+            <img src="assets/images/img-2.jpg" alt="Bharatanatyam dancer" loading="lazy" />
+          </div>
+          <div class="banner-overlay">
+            <span class="badge">✦ featured performance</span>
+            <h3>Traditional depth,<br />modern stage presence</h3>
+            <p>Every lesson is shaped to build rhythm, confidence, and a timeless sense of grace.</p>
+            <a class="btn btn-primary" href="#gallery" style="padding:8px 20px;font-size:0.7rem;">View Gallery</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─── DANCE STEPS ─── -->
+      <section class=" dance-steps" id="steps">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Bharatanatyam mudras & postures</p>
+          <h2>Every gesture <br> <span class="highlight">tells a story</span></h2>
+        </div>
+        <div class="steps-grid">
+          <article class="step-card reveal">
+            <img src="assets/images/15.jpg" alt="Alarippu pose" loading="lazy" />
+            <div class="step-body">
+              <h4>Alarippu</h4>
+              <p>Opening invocation with rhythmic syllables and graceful body movements.</p>
+              <span class="mudra-tag">foundation</span>
+            </div>
+          </article>
+          <article class="step-card reveal">
+            <img src="assets/images/6.jpg" alt="Jatiswaram pose" loading="lazy" />
+            <div class="step-body">
+              <h4>Jatiswaram</h4>
+              <p>Pure dance sequence with complex rhythmic patterns and elegant footwork.</p>
+              <span class="mudra-tag">intermediate</span>
+            </div>
+          </article>
+          <article class="step-card reveal">
+            <img src="assets/images/img-5.jpg" alt="Abhinaya pose" loading="lazy" />
+            <div class="step-body">
+              <h4>Abhinaya</h4>
+              <p>Expressive storytelling through intricate facial expressions and hand gestures.</p>
+              <span class="mudra-tag">advanced</span>
+            </div>
+          </article>
+          <article class="step-card reveal">
+            <img src="assets/images/gal-5.jpg" alt="Navaratri pose" loading="lazy" />
+            <div class="step-body">
+              <h4>Navaratri</h4>
+              <p>Festival performances celebrating the divine feminine through rhythmic dance.</p>
+              <span class="mudra-tag">festival</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ─── GUIDANCE ─── -->
+      <section class="guidance" id="guidance">
+        <div class="guidance-grid">
+          <div class="guidance-copy reveal">
+            <p class="eyebrow">Guru-shishya parampara</p>
+            <h2>Guidance that shapes <span class="highlight">artistry</span></h2>
+            <p>At Nalinam Nrithyalaya, every student is guided with care, patience, and the timeless values of the Guru–Shishya tradition. From learning the very first Adavu to performing a memorable Arangetram, we nurture discipline, confidence, expression, and a deep appreciation for the rich heritage of Bharatanatyam.</p>
+            <p>Our teaching combines authentic classical techniques with a supportive learning environment, helping each student develop strong fundamentals, expressive artistry, and confidence on stage.</p>
+            <ul class="guidance-list">
+              <li>Personalized Guidance for Every Student</li>
+              <li>Step-by-Step Bharatanatyam Training</li>
+              <li>Regular Practice & Progress Assessment</li>
+              <li>Abhinaya (Expression) & Nritta (Technique) Development</li>
+              <li>Stage Performance Preparation</li>
+              <li>Arangetram Guidance & Mentorship  </li>
+            </ul>
+          </div>
+          <div class="guidance-media reveal">
+            <div class="g-img">
+              <img src="assets/images/5.jpg" alt="Guru guiding student" loading="lazy" />
+            </div>
+            <div class="g-img">
+              <img src="assets/images/gal-19.jpg" alt="Student practicing mudra" loading="lazy" />
+            </div>
+            <div class="g-img">
+              <img src="assets/images/gal-8.jpg" alt="Dance rehearsal" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─── ABOUT ─── -->
+      <section class="about" id="about">
+        <div class="about-copy reveal">
+          <p class="eyebrow">The institute story</p>
+          <h2>Rooted in devotion, shaped for <span class="highlight">modern artistry</span>.</h2>
+          <p>Founded in 2018, Nalinam Nrithyalaya is a dedicated institution for Bharatanatyam in Kilpauk, Chennai, nurturing around 25 students in India as well as abroad with a strong emphasis on tradition, discipline, and aesthetic excellence. As an affiliate of CAPA, the institution follows the distinguished bani – Chitrabani and teaching methodology of Guru Smt. Chitra Visweswaran.</p>
+          <p>The institution is committed to a holistic approach to dance education. Along with rigorous training in Bharatanatyam, students are also guided in carnatic music, body strengthening, and yoga, recognizing that these are integral to developing stamina, alignment, rhythm, and expressive depth in dance.</p>
+          <div class="about-list">
+            <div><strong>Mission</strong><span>To nurture confident, expressive performers through authentic Bharatanatyam training.</span></div>
+            <div><strong>Vision</strong><span>To create a vibrant community where heritage, artistry, and excellence thrive together.</span></div>
+          </div>
+        </div>
+        <div class="about-media reveal">
+          <div class="sculpture-card">
+            <img src="assets/images/17.jpg" alt="Bharatanatyam sculpture" loading="lazy" />
+          </div>
+        </div>
+      </section>
+
+      <!-- ─── FEATURES ─── -->
+      <section class="features" id="benefits">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Why choose us</p>
+          <h2>Every detail is designed for <span class="highlight">excellence</span>.</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <div class="feature-icon">🪷</div>
+            <h3>Guru-shishya</h3>
+            <p>Personalised mentorship passed down through generations, rooted in tradition.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-icon">🎵</div>
+            <h3>Live rhythm</h3>
+            <p>Classes accompanied by live percussion and vocal support for authentic training.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-icon">👑</div>
+            <h3>Performance ready</h3>
+            <p>Regular stage exposure from temple festivals to grand Arangetram showcases.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- ─── COURSES ─── -->
+      <section class="courses" id="courses">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Signature pathways</p>
+          <h2>Choose the rhythm that fits your <span class="highlight">journey</span>.</h2>
+        </div>
+        <div class="course-grid">
+          <article class="course-card reveal">
+            <span class="course-badge">foundation</span>
+            <h3>Alarippu</h3>
+            <p class="course-subtitle">Beginners • 6+ years</p>
+            <p>Introduction to rhythmic patterns, basic postures, and the beauty of adavus.</p>
+            <a href="#contact">Join this batch</a>
+          </article>
+          <article class="course-card reveal">
+            <span class="course-badge">intermediate</span>
+            <h3>Jatiswaram</h3>
+            <p class="course-subtitle">2+ years experience</p>
+            <p>Complex sequences, expressive storytelling, and deeper engagement with abhinaya.</p>
+            <a href="#contact">Join this batch</a>
+          </article>
+          <article class="course-card reveal">
+            <span class="course-badge">advanced</span>
+            <h3>Arangetram</h3>
+            <p class="course-subtitle">4+ years experience</p>
+            <p>Full-length debut performance preparation with intensive rehearsals and stage training.</p>
+            <a href="#contact">Join this batch</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="gallery" id="gallery">
+
+            <!-- Heading -->
+            <div class="section-heading reveal">
+                <p class="eyebrow">Gallery &amp; performances</p>
+                <h2>A Journey Captured in <br> <span class="highlight">Grace</span>.</h2>
+                <!-- <p class="sub">Explore the artistry—each frame tells a story of grace, rhythm, and devotion.</p> -->
+            </div>
+
+            <!-- Filters -->
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="recital">Arangetram</button>
+                <button class="filter-btn" data-filter="festival">Festival</button>
+                <!-- <button class="filter-btn" data-filter="workshop">Workshop</button>
+                <button class="filter-btn" data-filter="ensemble">Ensemble</button> -->
+            </div>
+
+            <!-- Grid -->
+            <div class="gallery-grid" id="galleryGrid">
+
+                <!-- Card 1 – featured 2x -->
+                <article class="gallery-card featured-2x" data-category="recital">
+                    <div class="gallery-card-inner">
+                        <img src="assets/images/gal-12.jpg" alt="Annual Day recital" loading="lazy" />
+                        <div class="gallery-overlay">
+                            <span class="gold-line"></span>
+                            <span class="tag">recital</span>
+                            <h3>Annual Day</h3>
+                            <p class="meta">⏺ 12 Mar 2026</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="gallery-card" data-category="recital">
+                    <div class="gallery-card-inner">
+                        <img src="assets/images/gal-10.jpg" alt="Annual Day performance" loading="lazy" />
+                        <div class="gallery-overlay">
+                            <span class="gold-line"></span>
+                            <span class="tag">recital</span>
+                            <h3>Annual Day</h3>
+                            <p class="meta">⏺ 12 Mar 2026</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 3 – featured wide -->
+                <article class="gallery-card featured-wide" data-category="festival">
+                    <div class="gallery-card-inner">
+                        <img src="assets/images/gal-3.jpg" alt="Navaratri festival" loading="lazy" />
+                        <div class="gallery-overlay">
+                            <span class="gold-line"></span>
+                            <span class="tag">festival</span>
+                            <h3>Navaratri</h3>
+                            <p class="meta">⏺ 15 Oct 2025</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 4 -->
+                <article class="gallery-card featured-tall" data-category="workshop">
+                    <div class="gallery-card-inner">
+                        <img src="assets/images/gal-2.jpg" alt="Abhinaya workshop" loading="lazy" />
+                        <div class="gallery-overlay">
+                            <span class="gold-line"></span>
+                            <span class="tag">workshop</span>
+                            <h3>Abhinaya</h3>
+                            <p class="meta">⏺ 22 May 2025</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 5 -->
+                <article class="gallery-card" data-category="festival">
+                    <div class="gallery-card-inner">
+                        <img src="assets/images/gal-4.jpg" alt="Navaratri celebration" loading="lazy" />
+                        <div class="gallery-overlay">
+                            <span class="gold-line"></span>
+                            <span class="tag">festival</span>
+                            <h3>Navaratri</h3>
+                            <p class="meta">⏺ 15 Oct 2025</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 6 -->
+                <article class="gallery-card featured-2x" data-category="ensemble">
+                    <div class="gallery-card-inner">
+                        <img src="assets/images/gal-5.jpg" alt="Arangetram ensemble" loading="lazy" />
+                        <div class="gallery-overlay">
+                            <span class="gold-line"></span>
+                            <span class="tag">ensemble</span>
+                            <h3>Arangetram</h3>
+                            <p class="meta">⏺ 08 Jun 2025</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 7 -->
+                <article class="gallery-card" data-category="recital">
+                    <div class="gallery-card-inner">
+                        <img src="assets/images/gal-13.jpg" alt="Annual Day recital" loading="lazy" />
+                        <div class="gallery-overlay">
+                            <span class="gold-line"></span>
+                            <span class="tag">recital</span>
+                            <h3>Annual Day</h3>
+                            <p class="meta">⏺ 12 Mar 2026</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 8 -->
+                <article class="gallery-card featured-tall" data-category="ensemble">
+                    <div class="gallery-card-inner">
+                        <img src="assets/images/gal-15.jpg" alt="Arangetram ensemble" loading="lazy" />
+                        <div class="gallery-overlay">
+                            <span class="gold-line"></span>
+                            <span class="tag">ensemble</span>
+                            <h3>Arangetram</h3>
+                            <p class="meta">⏺ 08 Jun 2025</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- new -->
+
+
+                  <article class="gallery-card" data-category="recital">
+                    <div class="gallery-card-inner">
+                        <img src="assets/images/gal-6.jpg" alt="Annual Day performance" loading="lazy" />
+                        <div class="gallery-overlay">
+                            <span class="gold-line"></span>
+                            <span class="tag">recital</span>
+                            <h3>Annual Day</h3>
+                            <p class="meta">⏺ 12 Mar 2026</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 3 – featured wide -->
+                <article class="gallery-card featured-wide" data-category="festival">
+                    <div class="gallery-card-inner">
+                        <img src="assets/images/gal-8.jpg" alt="Navaratri festival" loading="lazy" />
+                        <div class="gallery-overlay">
+                            <span class="gold-line"></span>
+                            <span class="tag">festival</span>
+                            <h3>Navaratri</h3>
+                            <p class="meta">⏺ 15 Oct 2025</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 4 -->
+                <article class="gallery-card featured-tall" data-category="workshop">
+                    <div class="gallery-card-inner">
+                        <img src="assets/images/gal-7.jpg" alt="Abhinaya workshop" loading="lazy" />
+                        <div class="gallery-overlay">
+                            <span class="gold-line"></span>
+                            <span class="tag">workshop</span>
+                            <h3>Abhinaya</h3>
+                            <p class="meta">⏺ 22 May 2025</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 5 -->
+                <article class="gallery-card" data-category="festival">
+                    <div class="gallery-card-inner">
+                        <img src="assets/images/gal-9.jpg" alt="Navaratri celebration" loading="lazy" />
+                        <div class="gallery-overlay">
+                            <span class="gold-line"></span>
+                            <span class="tag">festival</span>
+                            <h3>Navaratri</h3>
+                            <p class="meta">⏺ 15 Oct 2025</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 6 -->
+                <article class="gallery-card featured-2x" data-category="ensemble">
+                    <div class="gallery-card-inner">
+                        <img src="assets/images/gal-14.jpg" alt="Arangetram ensemble" loading="lazy" />
+                        <div class="gallery-overlay">
+                            <span class="gold-line"></span>
+                            <span class="tag">ensemble</span>
+                            <h3>Arangetram</h3>
+                            <p class="meta">⏺ 08 Jun 2025</p>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+         <!-- ─── LIGHTBOX ─── -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose">✕</button>
+        <div class="lightbox-content">
+            <img id="lightboxImg" src="" alt="enlarged view" />
+            <div class="lightbox-caption">
+                <span class="tag" id="lightboxTag">recital</span>
+                <h3 id="lightboxTitle">Annual Day</h3>
+            </div>
+        </div>
+    </div>
+
+      <!-- ─── EVENTS ─── -->
+      <section class="events">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Upcoming highlights</p>
+          <h2>Performances, festivals, and <span class="highlight">milestones</span>.</h2>
+        </div>
+        <div class="timeline reveal">
+          <div class="timeline-item"><strong>August 12</strong><span>Temple Festival Showcase</span></div>
+          <div class="timeline-item"><strong>September 24</strong><span>Arangetram Gala Evening</span></div>
+          <!-- <div class="timeline-item"><strong>October 30</strong><span>Navaratri Celebration Program</span></div> -->
+        </div>
+      </section>
+
+      <!-- ─── BLOG ─── -->
+      <!-- <section class="blog">
+        <div class="section-heading reveal">
+          <p class="eyebrow">From the studio</p>
+          <h2>Stories, guidance, and dance <span class="highlight">inspiration</span>.</h2>
+        </div>
+        <div class="blog-grid">
+          <article class="blog-card reveal">
+            <h3>Finding your rhythm</h3>
+            <p>How to connect with the tala and express emotion through every movement.</p>
+            <a href="#contact">Read more</a>
+          </article>
+          <article class="blog-card reveal">
+            <h3>Abhinaya unveiled</h3>
+            <p>The art of storytelling through facial expressions and subtle gestures.</p>
+            <a href="#contact">Read more</a>
+          </article>
+          <article class="blog-card reveal">
+            <h3>Preparing for Arangetram</h3>
+            <p>A guide for students approaching their debut performance on stage.</p>
+            <a href="#contact">Read more</a>
+          </article>
+        </div>
+      </section> -->
+
+      <!-- ─── TESTIMONIALS ─── -->
+      <section class="testimonials">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Student voices</p>
+          <h2>Trusted by families and <br> <span class="highlight">artists alike</span>.</h2>
+        </div>
+        <div class="testimonial-grid">
+          <article class="testimonial-card reveal">
+            <p>“Nalinam has transformed my daughter’s confidence. The training is rigorous yet deeply nurturing.”</p>
+            <div><strong>Meera R.</strong><span>Parent</span></div>
+          </article>
+          <article class="testimonial-card reveal">
+            <p>“Every session is a journey into tradition. I feel rooted, expressive, and more connected to my culture.”</p>
+            <div><strong>Anjali K.</strong><span>Senior student</span></div>
+          </article>
+          <article class="testimonial-card reveal">
+            <p>“The perfect blend of discipline and artistry. The performances are truly world-class.”</p>
+            <div><strong>Vikram S.</strong><span>Audience</span></div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ─── INSTRUCTOR ─── -->
+      <section class="instructor">
+        <div class="instructor-card reveal">
+          <div class="instructor-portrait">
+            <img src="assets/images/16.jpg" alt="Founder Guru Nalinam" loading="lazy" />
+          </div>
+          <div class="instructor-copy">
+            <p class="eyebrow">Founder & artistic director</p>
+            <h2>inspired by the Legacy of Smt. <span class="highlight">Rajalakshmi</span>.</h2>
+            <p>With deep-rooted training and a genuine passion for teaching, each student receives mentorship that balances discipline, beauty, and heart.</p>
+            <ul>
+              <li>15+ years of teaching experience</li>
+              <li>Certified performance training</li>
+              <li>Workshops for schools and cultural programs</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─── FAQ ─── -->
+      <section class="faq" id="faq">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Frequently asked</p>
+          <h2>Everything you need to <br> <span class="highlight">begin</span>.</h2>
+        </div>
+        <div class="faq-list">
+          <article class="faq-item reveal">
+            <button type="button" aria-expanded="false">
+              <span>What age groups do you teach?</span>
+              <span class="faq-toggle">+</span>
+            </button>
+            <div class="faq-answer"><p>We teach students from early beginners to adults, with classes tailored for young children, teenagers, and mature learners. Each program supports steady progress in technique and expressive performance.</p></div>
+          </article>
+          <article class="faq-item reveal">
+            <button type="button" aria-expanded="false">
+              <span>Do I need prior experience?</span>
+              <span class="faq-toggle">+</span>
+            </button>
+            <div class="faq-answer"><p>No prior experience is required. Beginners begin with foundational exercises, while advanced students receive deeper training in abhinaya, rhythm, and stage presence.</p></div>
+          </article>
+          <article class="faq-item reveal">
+            <button type="button" aria-expanded="false">
+              <span>What is the class schedule?</span>
+              <span class="faq-toggle">+</span>
+            </button>
+            <div class="faq-answer"><p>Classes are available on weekdays and weekends, with flexible batches for school students and working adults. Contact us to view the current schedule and book your preferred slot.</p></div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ─── CONTACT ─── -->
+      <section class="contact" id="contact">
+        <div class="contact-card reveal">
+          <div class="contact-copy">
+            <p class="eyebrow">Reserve your place</p>
+            <h2>Book your free trial <span class="highlight">today</span>.</h2>
+            <p>Visit us in Kilpauk or get in touch for admission guidance, class schedules, and performance programs.</p>
+            <div class="contact-details">
+              <span>📍 Kilpauk, Chennai</span>
+              <span>📞 +91 9884865999 / 9176767371</span>
+              <span>✉️ nalinamnrithyalaya@gmail.com</span>
+            </div>
+          </div>
+          <form class="contact-form">
+            <input type="text" placeholder="Name" />
+            <input type="tel" placeholder="Phone" />
+            <input type="email" placeholder="Email" />
+            <textarea rows="3" placeholder="Tell us about your goals"></textarea>
+            <button type="submit">Request Trial</button>
+          </form>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ─── FOOTER ─── -->
+    <footer class="footer">
+      <div class="footer-copy">
+        <strong>Nalinam Nrithyalaya</strong>
+        <p>Luxury classical training in the heart of Chennai.</p>
+      </div>
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="Nalinam Nrithyalaya logo" />
+      </div>
+      <div class="footer-links">
+        <a href="#courses">Classes</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </footer>
+
   </div>
 
-  <!-- TOPBAR -->
-  <header class="topbar reveal is-visible">
-    <a class="brand" href="#home">
-      <span class="brand-mark">
-        <img src="assets/logo.png" alt="Nalinam Nrithyalaya logo" />
-      </span>
-      <span>Nalinam Nrithyalaya</span>
-    </a>
-    <nav class="nav-links">
-      <a href="#about">About</a>
-      <a href="#courses">Classes</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <a class="nav-cta" href="#contact">Book Trial</a>
-  </header>
+  <!-- ─── SCRIPTS ─── -->
+  <script>
+    (function() {
+      // Reveal on scroll
+      const reveals = document.querySelectorAll('.reveal');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+          }
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+      reveals.forEach(el => observer.observe(el));
 
-  <main id="home">
-    <!-- HERO -->
-    <section class="section hero">
-      <div class="hero-content reveal is-visible">
-        <p class="eyebrow">Admissions Open • Kilpauk, Chennai</p>
-        <h1>Discover the Grace of<br /> Bharatanatyam</h1>
-        <p class="hero-text">A sacred home for dancers who seek elegance, discipline, and a deeply rooted cultural journey.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#contact">Book Free Trial</a>
-          <a class="btn btn-secondary" href="#courses">Explore Classes</a>
-        </div>
-        <div class="hero-stats">
-          <div class="stat-pill"><strong>12+</strong><span>Years legacy</span></div>
-          <div class="stat-pill"><strong>200+</strong><span>Students</span></div>
-          <div class="stat-pill"><strong>8</strong><span>Guru-sishya</span></div>
-        </div>
-      </div>
-      <div class="hero-visual reveal is-visible">
-        <div class="hero-orb"></div>
-        <div class="dance-3d-wrapper">
-          <img class="dance-image-3d"
-               src="assets/images/img-5.jpg"
-               alt="Bharatanatyam dancer 3D" loading="lazy" />
-        </div>
-        <div class="hero-card">
-          <div class="hero-card__top"><span>Featured</span><span>Royal Practice</span></div>
-          <div class="hero-card__body">
-            <h3>Traditional depth, modern stage presence</h3>
-            <p>Every lesson is shaped to build rhythm, confidence, and a timeless sense of grace.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section class="section about" id="about">
-      <div class="about-copy reveal">
-        <p class="eyebrow">The institute story</p>
-        <h2>Rooted in devotion, shaped for modern artistry.</h2>
-        <p>Founded in 2018, Nalinam Nrithyalaya is a dedicated institution for Bharatanatyam in Kilpauk, Chennai, nurturing around 25 students in India as well as abroad with a strong emphasis on tradition, discipline, and aesthetic excellence. As an affiliate of CAPA, the institution follows the distinguished bani – Chitrabani and teaching methodology of Guru Smt. Chitra Visweswaran. The institution is committed to a holistic approach to dance education. Along with rigorous training in Bharatanatyam, students are also guided in carnatic music, body strengthening, and yoga, recognizing that these are integral to developing stamina, alignment, rhythm, and expressive depth in dance. Over the years, Nalinam Nrithyalaya has actively contributed to the cultural landscape through annual showcases, dance productions, and participation in various cultural programs and temple festivals.</p>
-        <p>Students are trained not only in technique but also in the finer nuances of bhava, laya, and abhinaya, enabling a well-rounded and immersive understanding of our bani. With a vision to preserve and propagate the rich heritage of Bharatanatyam and chitrabani, the institution continues to inspire young dancers to pursue the art with sincerity, grace, and devotion with the guidance of its parent institution CAPA.</p>
-        <div class="about-list">
-          <div><strong>Mission</strong><span>To nurture confident, expressive performers through authentic Bharatanatyam training.</span></div>
-          <div><strong>Vision</strong><span>To create a vibrant community where heritage, artistry, and excellence thrive together.</span></div>
-        </div>
-      </div>
-      <div class="about-media reveal">
-        <div class="sculpture-card">
-          <img src="assets/images/img-17.jpg" alt="Sculpture of Bharatanatyam dancer" loading="lazy" />
-        </div>
-      </div>
-    </section>
-
-    <!-- FEATURES -->
-    <section class="section features" id="benefits">
-      <div class="section-heading reveal"><p class="eyebrow">Why choose us</p><h2>Every detail is designed for excellence.</h2></div>
-      <div class="feature-grid">
-        <article class="feature-card reveal"><div class="feature-icon">🪷</div><h3>Guru-shishya</h3><p>Personalised mentorship passed down through generations, rooted in tradition.</p></article>
-        <article class="feature-card reveal"><div class="feature-icon">🎵</div><h3>Live rhythm</h3><p>Classes accompanied by live percussion and vocal support for authentic training.</p></article>
-        <article class="feature-card reveal"><div class="feature-icon">👑</div><h3>Performance ready</h3><p>Regular stage exposure from temple festivals to grand Arangetram showcases.</p></article>
-      </div>
-    </section>
-
-    <!-- COURSES -->
-    <section class="section courses" id="courses">
-      <div class="section-heading reveal"><p class="eyebrow">Signature pathways</p><h2>Choose the rhythm that fits your journey.</h2></div>
-      <div class="course-grid">
-        <article class="course-card reveal"><span class="course-badge">foundation</span><h3>Alarippu</h3><p class="course-subtitle">Beginners • 6+ years</p><p>Introduction to rhythmic patterns, basic postures, and the beauty of adavus.</p><a href="#contact">Join this batch</a></article>
-        <article class="course-card reveal"><span class="course-badge">intermediate</span><h3>Jatiswaram</h3><p class="course-subtitle">2+ years experience</p><p>Complex sequences, expressive storytelling, and deeper engagement with abhinaya.</p><a href="#contact">Join this batch</a></article>
-      </div>
-    </section>
-
-    <!-- GALLERY -->
-    <section class="section gallery" id="gallery">
-      <div class="section-heading reveal"><p class="eyebrow">Gallery & performances</p><h2>Moments of movement, memory, and majesty.</h2></div>
-      <div class="gallery-grid">
-        <article class="gallery-card reveal"><img src="assets/images/gal-1.jpg" alt="dance 1" /><div class="gallery-overlay"><span>recital</span><h3>Annual Day</h3></div></article>
-         <article class="gallery-card reveal"><img src="assets/images/gal-10.jpg" alt="dance 7" /><div class="gallery-overlay"><span>recital</span><h3>Annual Day</h3></div></article>
-        <article class="gallery-card reveal"><img src="assets/images/gal-2.jpg" alt="dance 2" /><div class="gallery-overlay"><span>festival</span><h3>Navaratri</h3></div></article>
-        <article class="gallery-card reveal"><img src="assets/images/gal-3.jpg" alt="dance 3" /><div class="gallery-overlay"><span>workshop</span><h3>Abhinaya</h3></div></article>
-        <article class="gallery-card reveal"><img src="assets/images/gal-4.jpg" alt="dance 4" /><div class="gallery-overlay"><span>festival</span><h3>Navaratri</h3></div></article>
-        <article class="gallery-card reveal"><img src="assets/images/gal-5.jpg" alt="dance 5" /><div class="gallery-overlay"><span>ensemble</span><h3>Arangetram</h3></div></article>
-         <article class="gallery-card reveal"><img src="assets/images/gal-13.jpg" alt="dance 8" /><div class="gallery-overlay"><span>recital</span><h3>Annual Day</h3></div></article>
-                 <article class="gallery-card reveal"><img src="assets/images/gal-15.jpg" alt="dance 9" /><div class="gallery-overlay"><span>ensemble</span><h3>Arangetram</h3></div></article>
-
-      </div>
-    </section>
-
-    <!-- EVENTS -->
-    <section class="section events">
-      <div class="section-heading reveal"><p class="eyebrow">Upcoming highlights</p><h2>Performances, festivals, and milestones.</h2></div>
-      <div class="timeline reveal">
-        <div class="timeline-item"><strong>August 12</strong><span>Temple Festival Showcase</span></div>
-        <div class="timeline-item"><strong>September 24</strong><span>Arangetram Gala Evening</span></div>
-        <div class="timeline-item"><strong>October 30</strong><span>Navaratri Celebration Program</span></div>
-      </div>
-    </section>
-
-    <!-- BLOG -->
-    <section class="section blog">
-      <div class="section-heading reveal"><p class="eyebrow">From the studio</p><h2>Stories, guidance, and dance inspiration.</h2></div>
-      <div class="blog-grid">
-        <article class="blog-card reveal"><h3>Finding your rhythm</h3><p>How to connect with the tala and express emotion through every movement.</p><a href="#contact">Read more</a></article>
-        <article class="blog-card reveal"><h3>Abhinaya unveiled</h3><p>The art of storytelling through facial expressions and subtle gestures.</p><a href="#contact">Read more</a></article>
-        <article class="blog-card reveal"><h3>Preparing for Arangetram</h3><p>A guide for students approaching their debut performance on stage.</p><a href="#contact">Read more</a></article>
-      </div>
-    </section>
-
-    <!-- TESTIMONIALS -->
-    <section class="section testimonials">
-      <div class="section-heading reveal"><p class="eyebrow">Student voices</p><h2>Trusted by families and artists alike.</h2></div>
-      <div class="testimonial-grid">
-        <article class="testimonial-card reveal"><p>“Nalinam has transformed my daughter’s confidence. The training is rigorous yet deeply nurturing.”</p><div><strong>Meera R.</strong><span>Parent</span></div></article>
-        <article class="testimonial-card reveal"><p>“Every session is a journey into tradition. I feel rooted, expressive, and more connected to my culture.”</p><div><strong>Anjali K.</strong><span>Senior student</span></div></article>
-        <article class="testimonial-card reveal"><p>“The perfect blend of discipline and artistry. The performances are truly world-class.”</p><div><strong>Vikram S.</strong><span>Audience</span></div></article>
-      </div>
-    </section>
-
-    <!-- INSTRUCTOR -->
-    <section class="section instructor">
-      <div class="instructor-card reveal">
-        <div class="instructor-portrait">
-          <img src="assets/images/img-23.jpg" alt="">
-        </div>
-        <div class="instructor-copy">
-          <p class="eyebrow">Founder & artistic director</p>
-          <h2>Guided by tradition and polished for the modern stage.</h2>
-          <p>With deep-rooted training and a genuine passion for teaching, each student receives mentorship that balances discipline, beauty, and heart.</p>
-          <ul><li>15+ years of teaching experience</li><li>Certified performance training</li><li>Workshops for schools and cultural programs</li></ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="section faq" id="faq">
-      <div class="section-heading reveal"><p class="eyebrow">Frequently asked</p><h2>Everything you need to begin.</h2></div>
-      <div class="faq-list">
-        <article class="faq-item reveal">
-          <button type="button">
-            <span>What age groups do you teach?</span>
-            <span class="faq-toggle">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>We teach students from early beginners to adults, with classes tailored for young children, teenagers, and mature learners. Each program supports steady progress in technique and expressive performance.</p>
-          </div>
-        </article>
-        <article class="faq-item reveal">
-          <button type="button">
-            <span>Do I need prior experience?</span>
-            <span class="faq-toggle">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>No prior experience is required. Beginners begin with foundational exercises, while advanced students receive deeper training in abhinaya, rhythm, and stage presence.</p>
-          </div>
-        </article>
-        <article class="faq-item reveal">
-          <button type="button">
-            <span>What is the class schedule?</span>
-            <span class="faq-toggle">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>Classes are available on weekdays and weekends, with flexible batches for school students and working adults. Contact us to view the current schedule and book your preferred slot.</p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section class="section contact" id="contact">
-      <div class="contact-card reveal">
-        <div class="contact-copy">
-          <p class="eyebrow">Reserve your place</p>
-          <h2>Book your free trial today.</h2>
-          <p>Visit us in Kilpauk or get in touch for admission guidance, class schedules, and performance programs.</p>
-          <div class="contact-details">
-            <span>📍 Kilpauk, Chennai</span>
-            <span>📞 +91 9884865999 / 9176767371</span>
-            <span>✉️ nalinamnrithyalaya@gmail.com</span>
-          </div>
-        </div>
-        <form class="contact-form">
-          <input type="text" placeholder="Name" />
-          <input type="tel" placeholder="Phone" />
-          <input type="email" placeholder="Email" />
-          <textarea rows="3" placeholder="Tell us about your goals"></textarea>
-          <button type="submit">Request Trial</button>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="footer-copy">
-      <strong>Nalinam Nrithyalaya</strong>
-      <p>Luxury classical training in the heart of Chennai.</p>
-    </div>
-    <div class="footer-brand">
-      <img src="assets/logo.png" alt="Nalinam Nrithyalaya logo" />
-    </div>
-    <div class="footer-links"><a href="#courses">Classes</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></div>
-  </footer>
-</div>
-
-<script>
-  (function() {
-    const reveals = document.querySelectorAll('.reveal');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) entry.target.classList.add('is-visible');
+      // FAQ accordion
+      const faqButtons = document.querySelectorAll('.faq-item button');
+      faqButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          const item = button.closest('.faq-item');
+          const isOpen = item.classList.contains('is-open');
+          document.querySelectorAll('.faq-item.is-open').forEach(openItem => {
+            if (openItem !== item) {
+              openItem.classList.remove('is-open');
+              openItem.querySelector('button').setAttribute('aria-expanded', 'false');
+              openItem.querySelector('.faq-toggle').textContent = '+';
+            }
+          });
+          item.classList.toggle('is-open');
+          const nowOpen = item.classList.contains('is-open');
+          button.setAttribute('aria-expanded', nowOpen);
+          button.querySelector('.faq-toggle').textContent = nowOpen ? '−' : '+';
+        });
       });
-    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
-    reveals.forEach(el => observer.observe(el));
 
-    const faqButtons = document.querySelectorAll('.faq-item button');
-    faqButtons.forEach(button => {
-      button.addEventListener('click', () => {
-        const item = button.closest('.faq-item');
-        item.classList.toggle('is-open');
-        button.setAttribute('aria-expanded', item.classList.contains('is-open'));
-        const toggle = button.querySelector('.faq-toggle');
-        toggle.textContent = item.classList.contains('is-open') ? '−' : '+';
-      });
-    });
+      // Preloader
+      setTimeout(() => {
+        const preloader = document.querySelector('.preloader');
+        if (preloader) {
+          preloader.style.opacity = '0';
+          setTimeout(() => {
+            preloader.style.display = 'none';
+          }, 700);
+        }
+      }, 1400);
+    })();
+  </script>
 
-    setTimeout(() => {
-      const preloader = document.querySelector('.preloader');
-      if (preloader) preloader.style.opacity = '0';
-      setTimeout(() => { if (preloader) preloader.style.display = 'none'; }, 600);
-    }, 1200);
-  })();
-</script>
+    <!-- ──────────────────────────────────────────────
+    JAVASCRIPT
+    ────────────────────────────────────────────── -->
+    <script>
+        (function() {
+            'use strict';
+
+            // ── 1. STAGGERED REVEAL ──
+            const cards = document.querySelectorAll('.gallery-card');
+
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach((entry, index) => {
+                    if (entry.isIntersecting) {
+                        // add a staggered delay based on index
+                        const delay = Array.from(cards).indexOf(entry.target) * 60;
+                        setTimeout(() => {
+                            entry.target.classList.add('revealed');
+                        }, delay);
+                        revealObserver.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.12,
+                rootMargin: '0px 0px -40px 0px'
+            });
+
+            cards.forEach(card => revealObserver.observe(card));
+
+            // ── 2. FILTER ──
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const grid = document.getElementById('galleryGrid');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // active class
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+
+                    const filter = this.dataset.filter;
+
+                    cards.forEach(card => {
+                        const category = card.dataset.category;
+                        const match = filter === 'all' || category === filter;
+
+                        // fade / scale transition
+                        if (match) {
+                            card.style.display = 'block';
+                            setTimeout(() => {
+                                card.style.opacity = '1';
+                                card.style.transform = 'scale(1)';
+                            }, 10);
+                        } else {
+                            card.style.opacity = '0';
+                            card.style.transform = 'scale(0.92)';
+                            setTimeout(() => {
+                                card.style.display = 'none';
+                            }, 350);
+                        }
+                    });
+                });
+            });
+
+            // ── 3. LIGHTBOX ──
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightboxImg');
+            const lightboxTag = document.getElementById('lightboxTag');
+            const lightboxTitle = document.getElementById('lightboxTitle');
+            const closeBtn = document.getElementById('lightboxClose');
+
+            // Click on any card to open lightbox
+            cards.forEach(card => {
+                card.addEventListener('click', function() {
+                    const img = this.querySelector('img');
+                    const overlay = this.querySelector('.gallery-overlay');
+                    const tag = overlay?.querySelector('.tag')?.textContent || 'performance';
+                    const title = overlay?.querySelector('h3')?.textContent || 'Untitled';
+
+                    lightboxImg.src = img.src;
+                    lightboxImg.alt = img.alt;
+                    lightboxTag.textContent = tag;
+                    lightboxTitle.textContent = title;
+
+                    lightbox.classList.add('open');
+                    document.body.style.overflow = 'hidden';
+                });
+            });
+
+            function closeLightbox() {
+                lightbox.classList.remove('open');
+                document.body.style.overflow = '';
+            }
+
+            closeBtn.addEventListener('click', closeLightbox);
+
+            lightbox.addEventListener('click', function(e) {
+                if (e.target === this) closeLightbox();
+            });
+
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') closeLightbox();
+            });
+
+        })();
+    </script>
+
 </body>
 </html>
