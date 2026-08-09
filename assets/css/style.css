@@ -2843,7 +2843,7 @@
             border: 2px solid var(--white);
             box-shadow: var(--shadow-heavy);
             background: var(--cream);
-            transform: rotate(6deg) translateY(8px);
+            transform: rotate(0deg) translateY(8px);
             transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1),
                 box-shadow 0.6s ease,
                 border-color 0.6s ease;
@@ -2861,7 +2861,7 @@
         }
 
         .about-image-secondary:hover {
-            transform: rotate(0deg) scale(1.04) translateY(0);
+            transform: rotate(6deg) scale(1.04) translateY(0);
             box-shadow: 0 20px 56px rgba(0, 0, 0, 0.2);
             border-color: var(--gold);
         }
@@ -2917,6 +2917,28 @@
             padding: 0 80px;
         }
 
+        @media (max-width: 1024px) {
+        .about-grid {
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+}
+
+        @media (max-width: 760px) {
+              .about-content {
+            
+            padding: 0 0px;
+        }
+        }
+
+        @media (max-width: 480px) {
+              .about-content {
+          
+            padding: 0 0px;
+            }
+        }
+
+        
         .about-content .eyebrow {
             font-size: 0.65rem;
             letter-spacing: 4px;
