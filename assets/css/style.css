@@ -21,6 +21,7 @@
       --text-muted: #8A7A7A;
       --border-light: rgba(0, 0, 0, 0.06);
       --shadow-light: 0 8px 32px rgba(0, 0, 0, 0.06);
+      --radius: 22px;
       --font-cinzel: 'Cinzel', serif;
       --font-garamond: 'Cormorant Garamond', serif;
       --font-poppins: 'Poppins', sans-serif;
@@ -29,7 +30,12 @@
       scroll-behavior: smooth;
     }
     body {
-      background: var(--light-bg);
+      background-color: var(--light-bg);
+      background-image:
+        radial-gradient(circle at 12% 15%, rgba(200, 155, 60, 0.16), transparent 24%),
+        radial-gradient(circle at 88% 72%, rgba(200, 155, 60, 0.12), transparent 18%),
+        linear-gradient(180deg, #fcf7f1 0%, #f7efe5 100%);
+      background-repeat: no-repeat;
       color: var(--text-primary);
       font-family: var(--font-poppins);
       font-weight: 300;
@@ -51,6 +57,37 @@
       margin: 0 auto; */
       padding: 0 0px;
       position: relative;
+    }
+    section {
+      position: relative;
+      overflow: hidden;
+    }
+    section > * {
+      position: relative;
+      z-index: 2;
+    }
+    section::before,
+    section::after {
+      content: '';
+      position: absolute;
+      z-index: 1;
+      pointer-events: none;
+      opacity: 0.28;
+      filter: blur(3px);
+    }
+    section::before {
+      top: -20px;
+      left: -18px;
+      width: 240px;
+      height: 240px;
+      background: radial-gradient(circle at 30% 30%, rgba(200, 155, 60, 0.24), transparent 48%);
+    }
+    section::after {
+      bottom: -18px;
+      right: -20px;
+      width: 220px;
+      height: 220px;
+      background: radial-gradient(circle at 65% 60%, rgba(200, 155, 60, 0.18), transparent 44%);
     }
     @media (max-width: 768px) {
       .page-shell {
@@ -144,7 +181,7 @@
       color: var(--dark);
     }
     .brand-mark img {
-      height: 36px;
+      height: 56px;
       width: auto;
       /* filter: brightness(0); */
     }
@@ -199,11 +236,13 @@
        ────────────────────────────────────────────── */
     .reveal {
       opacity: 0;
-      transform: translateY(48px);
-      transition: opacity 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-        transform 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      transform: translateY(42px);
+      transition: opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      will-change: opacity, transform;
     }
-    .reveal.is-visible {
+    .reveal.is-visible,
+    .reveal.revealed {
       opacity: 1;
       transform: translateY(0);
     }
@@ -248,16 +287,27 @@
        ────────────────────────────────────────────── */
    .hero {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 48px;
-  padding: 40px 45px 80px 45px;
-  min-height: 80vh;
+  grid-template-columns: 2fr 1fr;
+  gap: 45px;
+  padding: 40px 80px 80px 80px;
+  /* min-height: 80vh; */
   align-items: center;
   position: relative;
-  /* Adds a 50% black tint layer over the image */
-  background-image:  linear-gradient(#2a2424c4, rgb(255 180 23 / 27%)), url(../images/hero-img.png);
-  background-size: cover;
+ width: 100%;
+  min-height: 100vh; /* Ensures the container expands full height */
+
+  /* 1. GRADIENTS FIRST (rendered on top) */
+  /* 2. IMAGE LAST (rendered beneath the gradients) */
+  background-image:
+    radial-gradient(circle at 10% 10%, rgba(200, 155, 60, 0.25), transparent 30%),
+    radial-gradient(circle at 92% 35%, rgba(255, 240, 205, 0.20), transparent 25%),
+    linear-gradient(135deg, rgba(26, 20, 16, 0.82), rgba(48, 37, 19, 0.70)),
+    url('../images/hero-img.png');
+
+  background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
+  
 }
     .hero-content {
       display: flex;
@@ -347,22 +397,22 @@
       position: relative;
       border-radius: 20px;
       overflow: hidden;
-      min-height: 480px;
-      background: var(--cream);
+      min-height: 650px;
+      background: var(--dark);
       box-shadow: var(--shadow-light);
-      border: 1px solid var(--border-light);
+      border: 1px solid var(--light-bg);
     }
     .hero-visual .banner-bg {
       position: absolute;
       inset: 0;
-      background: radial-gradient(circle at 70% 50%, rgb(255 180 23 / 76%), #000000f0 70%);
+      background: radial-gradient(circle at 4% 36%, rgba(255, 182, 23, 0.32), #00000063 38%);
 
     }
     .hero-visual .banner-image {
       position: absolute;
       right: 0;
       top: 0;
-      width: 65%;
+      width: 50%;
       height: 100%;
       object-fit: cover;
       mask-image: linear-gradient(to left, black 60%, transparent 100%);
@@ -376,7 +426,8 @@
     .hero-visual .banner-overlay {
       position: relative;
       z-index: 2;
-      padding: 40px;
+      padding: 20px;
+      margin-top: 20%;
       height: 100%;
       display: flex;
       flex-direction: column;
@@ -601,6 +652,16 @@
       aspect-ratio: 4/3;
     }
 
+    .guidance-kolam {
+      position: absolute;
+      top: -15%;
+      right: -15%;
+      width: 1220px;
+      height: auto;
+      opacity: 0.52;
+      pointer-events: none;
+    }
+
     @media (max-width: 1024px) {
       .guidance-grid {
         grid-template-columns: 1fr;
@@ -612,6 +673,10 @@
       .guidance-media {
         grid-template-columns: 1fr 1fr;
       }
+      .guidance-kolam {
+      
+      width: 920px;
+    }
     }
     @media (max-width: 600px) {
       .guidance-media {
@@ -623,6 +688,10 @@
       .guidance-media .g-img:first-child img {
         aspect-ratio: 4/3;
       }
+      .guidance-kolam {
+      
+      width: 620px;
+    }
     }
 
    /* ──────────────────────────────────────────────
@@ -766,7 +835,7 @@
 .about-carousel-slide img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: scale-down;
     display: block;
     transition: transform 0.8s cubic-bezier(0.23, 1, 0.32, 1);
 }
@@ -1119,6 +1188,16 @@
 
 .why-sub:last-of-type {
     margin-top: 6px;
+}
+
+.why-kolam {
+      position: absolute;
+    top: 2%;
+    right: 22%;
+    width: 920px;
+    height: auto;
+    opacity: 0.28;
+    pointer-events: none;
 }
 
 /* ── Feature Grid ── */
@@ -2100,12 +2179,23 @@
     }
     .timeline-item strong {
       font-family: var(--font-cinzel);
-      color: var(--gold);
-      font-size: 0.9rem;
+      color: var(--dark);
+      font-size: 1.9rem;
+      font-weight: 600;
     }
     .timeline-item span {
       color: var(--text-secondary);
       font-size: 0.9rem;
+    }
+
+    .events-kolam{
+         position: absolute;
+    top: 2%;
+    right: 22%;
+    width: 920px;
+    height: auto;
+    opacity: 0.28;
+    pointer-events: none;
     }
 
     /* ──────────────────────────────────────────────
@@ -2781,6 +2871,27 @@
             align-items: center;
         }
 
+        /* kolam */
+        .about-image-kolam {
+    position: absolute;
+    top: 40%;
+    left: -20%;
+    width: 750px;
+    height: auto;
+    /* background-image: url(assets/images/kolam-2.png); */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top left;
+    opacity: 0.75;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.about-image-kolam img {
+    width: 450px;
+    height: auto;
+    display: block;
+}
         /* ── Images side (creative two‑image layout) ── */
         .about-images {
             position: relative;
@@ -3105,6 +3216,17 @@
       line-height: 1.6;
     }
 
+    .faq-kolam {
+    position: absolute;
+    top: 10%;
+    right: 50%;
+    width: 920px;
+    height: auto;
+    opacity: 0.28;
+    pointer-events: none;
+    }
+    
+
     /* ──────────────────────────────────────────────
        CONTACT – light
        ────────────────────────────────────────────── */
@@ -3210,6 +3332,16 @@
       }
     }
 
+    .contact-kolam {
+      position: absolute;
+      top: -80%;
+      right: 50%;
+      width: 920px;
+      height: auto;
+      opacity: 0.28;
+      pointer-events: none;
+    }
+
     /* ──────────────────────────────────────────────
        FOOTER – light
        ────────────────────────────────────────────── */
@@ -3235,9 +3367,19 @@
       margin-top: 2px;
     }
     .footer-brand img {
-      height: 160px;
+      height: 260px;
       width: auto;
       /* filter: brightness(0); */
+    }
+
+    .footer-kolam {
+          position: absolute;
+    bottom: 2%;
+    left: 88%;
+    width: 930px;
+    height: auto;
+    opacity: 0.68;
+    pointer-events: none;
     }
     .footer-social {
       display: flex;
