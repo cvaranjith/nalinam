@@ -491,7 +491,7 @@
         font-size: 1.8rem;
       }
       .hero-visual {
-        min-height: 240px;
+        min-height: 540px !important;
       }
       .hero-visual .banner-image {
         width: 100%;
@@ -501,6 +501,7 @@
       .hero-visual .banner-overlay {
         max-width: 80%;
         padding: 20px;
+        margin-top: 65%;
       }
       .hero-visual .banner-overlay h3 {
         font-size: 1.2rem;
@@ -3227,6 +3228,368 @@
     }
     
 
+    /* ══════════════════════════════════════════════════
+       LOCATION / FIND US SECTION – Google Maps
+       ══════════════════════════════════════════════════ */
+    .location {
+      padding: 80px 80px;
+      border-top: 1px solid var(--border-light);
+      background: var(--white);
+      position: relative;
+    }
+
+    .location-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* ── Heading ── */
+    .location-heading {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    .location-heading .eyebrow {
+      font-size: 0.65rem;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--gold-dark);
+      font-weight: 500;
+      display: inline-block;
+      position: relative;
+      padding: 0 20px;
+    }
+
+    .location-heading .eyebrow::before,
+    .location-heading .eyebrow::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      width: 24px;
+      height: 1px;
+      background: var(--gold);
+      opacity: 0.3;
+    }
+    .location-heading .eyebrow::before {
+      right: 100%;
+    }
+    .location-heading .eyebrow::after {
+      left: 100%;
+    }
+
+    .location-heading h2 {
+      font-family: var(--font-cinzel);
+      font-size: clamp(1.8rem, 3.2vw, 2.6rem);
+      font-weight: 700;
+      color: var(--dark);
+      margin-top: 4px;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+    }
+
+    .location-heading h2 .highlight {
+      color: var(--gold);
+    }
+
+    /* ── Two-Column Grid ── */
+    .location-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    /* ── Map Container ── */
+    .location-map-wrapper {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .location-map-container {
+      width: 100%;
+      height: 450px;
+      border-radius: 20px;
+      overflow: hidden;
+      border: 2px solid var(--gold);
+      box-shadow: 0 12px 48px rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(200, 155, 60, 0.15);
+      background: var(--cream);
+      transition: box-shadow 0.5s ease, border-color 0.5s ease, transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+      position: relative;
+    }
+
+    .location-map-container:hover {
+      box-shadow: 0 20px 64px rgba(0, 0, 0, 0.12), 0 0 0 2px var(--gold-glow);
+      border-color: var(--gold-dark);
+      transform: translateY(-4px);
+    }
+
+    .location-map-container iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+      filter: grayscale(35%) contrast(1.1);
+      transition: filter 0.5s ease;
+    }
+
+    .location-map-container:hover iframe {
+      filter: grayscale(20%) contrast(1.15);
+    }
+
+    /* ── Location Information ── */
+    .location-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .location-info-content {
+      padding: 0;
+    }
+
+    .location-subheading {
+      font-family: var(--font-cinzel);
+      font-size: 0.7rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--gold-dark);
+      font-weight: 600;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .location-subheading::before {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 2px;
+      background: var(--gold);
+      opacity: 0.4;
+    }
+
+    .location-tagline {
+      font-family: var(--font-garamond);
+      font-size: 1.3rem;
+      color: var(--text-secondary);
+      font-style: italic;
+      font-weight: 400;
+      margin-bottom: 24px;
+      line-height: 1.5;
+    }
+
+    .location-details {
+      margin-bottom: 24px;
+    }
+
+    .location-details h3 {
+      font-family: var(--font-cinzel);
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: var(--dark);
+      margin-bottom: 12px;
+      letter-spacing: 0.02em;
+    }
+
+    .location-address {
+      font-size: 0.95rem;
+      line-height: 1.8;
+      color: var(--text-secondary);
+      margin-bottom: 4px;
+    }
+
+    .location-address strong {
+      color: var(--dark);
+      font-weight: 500;
+    }
+
+    .location-contact-info {
+      margin-bottom: 28px;
+      padding: 16px 0;
+      border-top: 1px solid rgba(200, 155, 60, 0.1);
+      border-bottom: 1px solid rgba(200, 155, 60, 0.1);
+    }
+
+    .location-contact-info p {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      margin-bottom: 8px;
+      line-height: 1.6;
+    }
+
+    .location-contact-info strong {
+      color: var(--dark);
+      font-weight: 500;
+    }
+
+    /* ── Button ── */
+    .btn-location {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 32px;
+      background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+      color: var(--white);
+      font-family: var(--font-poppins);
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      border-radius: 50px;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 1),
+                  box-shadow 0.3s ease,
+                  background 0.3s ease;
+      box-shadow: 0 8px 24px rgba(200, 155, 60, 0.2);
+    }
+
+    .btn-location:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 40px rgba(200, 155, 60, 0.3);
+      background: linear-gradient(135deg, var(--gold-dark), var(--gold));
+    }
+
+    /* ── Reveal animations ── */
+    .location .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    .location .reveal.revealed {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ── Responsive Layout ── */
+    @media (max-width: 1024px) {
+      .location-grid {
+        gap: 36px;
+      }
+
+      .location-map-container {
+        height: 400px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .location {
+        padding: 60px 0 60px;
+      }
+
+      .location-container {
+        padding: 0 16px;
+      }
+
+      .location-heading {
+        margin-bottom: 36px;
+      }
+
+      .location-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
+
+      .location-map-container {
+        height: 350px;
+      }
+
+      .location-info-content {
+        text-align: center;
+      }
+
+      .location-subheading {
+        justify-content: center;
+      }
+
+      .location-subheading::before {
+        order: 2;
+        margin-left: 0;
+      }
+
+      .location-details {
+        margin-bottom: 20px;
+      }
+
+      .location-contact-info {
+        margin-bottom: 24px;
+      }
+
+      .btn-location {
+        width: 100%;
+      }
+
+      .location-heading h2 {
+        font-size: 1.6rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .location {
+        padding: 50px 0 50px;
+      }
+
+      .location-container {
+        padding: 0 14px;
+      }
+
+      .location-heading {
+        margin-bottom: 28px;
+      }
+
+      .location-heading .eyebrow::before,
+      .location-heading .eyebrow::after {
+        width: 16px;
+      }
+
+      .location-map-container {
+        height: 300px;
+        border-radius: 14px;
+      }
+
+      .location-subheading {
+        font-size: 0.65rem;
+        margin-bottom: 6px;
+      }
+
+      .location-tagline {
+        font-size: 1.1rem;
+        margin-bottom: 18px;
+      }
+
+      .location-details h3 {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+      }
+
+      .location-address {
+        font-size: 0.9rem;
+      }
+
+      .location-contact-info p {
+        font-size: 0.8rem;
+        margin-bottom: 6px;
+      }
+
+      .location-contact-info {
+        margin-bottom: 20px;
+        padding: 12px 0;
+      }
+
+      .btn-location {
+        padding: 12px 24px;
+        font-size: 0.75rem;
+      }
+
+      .location-heading h2 {
+        font-size: 1.3rem;
+      }
+    }
+
     /* ──────────────────────────────────────────────
        CONTACT – light
        ────────────────────────────────────────────── */
@@ -3381,6 +3744,40 @@
     opacity: 0.68;
     pointer-events: none;
     }
+
+    @media (max-width: 768px) {
+        .footer-kolam {
+          position: absolute;
+    bottom: 2%;
+    left: 75%;
+    width: 630px;
+
+    
+    }
+      .footer {
+        padding: 50px 40px;
+      }
+      .footer-brand img {
+        height: 220px;
+      }
+
+      .contact {
+        padding: 60px 40px;
+    }
+
+    .faq {
+        padding: 60px 40px;
+    }
+    .gallery{
+        padding: 60px 40px;
+    }
+    .guidance-grid{
+        padding: 60px 40px;
+    }
+
+    }
+
+
     .footer-social {
       display: flex;
       flex-direction: column;
