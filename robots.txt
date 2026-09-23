@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Public site content
+Allow: /assets/
+Allow: /images/
+Allow: /css/
+
+Sitemap: https://YOUR-DOMAIN-HERE/sitemap.xml
